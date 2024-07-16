@@ -1,0 +1,29 @@
+@use "../../styleguide.scss" as styleguide;
+
+section {
+  @include styleguide.flexBoxColumnAligenCenter;
+  height: 100%;
+  padding: 60px 0;
+  .textBox {
+    margin-bottom: 50px;
+  }
+
+  .imageBoxResult {
+    @include styleguide.flexBoxRow;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    width: 80%;
+    max-width: 1200px;
+
+    margin-bottom: 60px;
+
+    .imageInBoxResult {
+      height: 75%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

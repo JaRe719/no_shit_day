@@ -1,0 +1,33 @@
+@use "../../styleguide.scss" as styleguide;
+
+section {
+  @include styleguide.flexBoxColumnAligenCenter;
+  justify-content: center;
+  height: 90vh;
+
+  .textBox {
+    @include styleguide.flexBoxColumnAligenCenter;
+    margin-bottom: 36px;
+
+    h1 {
+      @include styleguide.h1Style;
+      margin: 0;
+    }
+
+    h2 {
+      @include styleguide.h2Style;
+      margin: 0;
+    }
+  }
+
+  .imgBox {
+    height: 450px;
+    width: 450px;
+    margin-bottom: 66px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

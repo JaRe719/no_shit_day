@@ -1,0 +1,69 @@
+$gray200: #c0bfc4;
+$gray900: #1e1d20;
+$satin-sheen-gold: #d5ac4eff;
+$golden-brown-dark: #3a290d;
+
+@font-face {
+  font-family: "CrimsonPro";
+  src: url("./assets/fonts/CrimsonPro-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: url("./assets/fonts/Dosis-VariableFont_wght.ttf");
+}
+
+@mixin flexBoxColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexBoxColumnAligenCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flexBoxRow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin h1Style {
+  font-family: "CrimsonPro";
+  font-size: 6.2rem;
+  font-weight: 600;
+  word-spacing: -4%;
+  color: $golden-brown-dark;
+}
+
+@mixin h2Style {
+  font-family: "CrimsonPro";
+  font-size: 3.3rem;
+  font-weight: 600;
+  word-spacing: -4%;
+  color: $golden-brown-dark;
+}
+
+@mixin pStyle {
+  font-family: "CrimsonPro";
+  font-size: 2.2rem;
+  font-weight: 600;
+  word-spacing: -4%;
+  color: $golden-brown-dark;
+}
+
+@mixin buttonStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  width: 350px;
+  border-radius: 20px;
+  background-color: $satin-sheen-gold;
+  font-family: "CrimsonPro";
+  font-size: 2.2rem;
+  font-weight: 600;
+  word-spacing: -4%;
+  color: $gray900;
+}

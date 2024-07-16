@@ -1,0 +1,19 @@
+@use "../../styleguide.scss" as styleguide;
+
+header {
+  @include styleguide.flexBoxRow;
+  align-items: center;
+  height: 130px;
+  padding: 18px 32px;
+
+  img {
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+  }
+
+  p {
+    @include styleguide.pStyle;
+    margin: 0;
+  }
+}

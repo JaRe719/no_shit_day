@@ -1,0 +1,5 @@
+@use "../../styleguide.scss" as styleguide;
+
+#btn {
+  @include styleguide.buttonStyle;
+}

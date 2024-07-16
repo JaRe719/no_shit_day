@@ -1,7 +1,6 @@
-
 import './App.css';
 import { useEffect, useState } from 'react';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import loadAllProducts from './utils/DataFetch';
 import Home from "./pages/Home/Home";
 import Layout from "./pages/Layout/Layout";
@@ -10,10 +9,7 @@ import Result from "./pages/Result/Result";
 import GameOver from "./pages/GameOver/GameOver";
 import NoPage from './pages/NoPage/NoPage';
 
-
-
 function App() {
-
   const [result, setResult] = useState("");
   const [lives, setLives] = useState(3);
   const [productsWithMilk, setProductsWithMilk] = useState([]);
@@ -38,29 +34,37 @@ function App() {
     return <div>Error: {error}</div>;
   }
 
-  const handleResultChange = (gameresult)=>{
+  const handleResultChange = (gameresult) => {
     setResult(gameresult);
   };
 
-  const handleLives = (currentLives)=>{
+  const handleLives = (currentLives) => {
     setLives(currentLives);
   };
 
-
   return (
     <div className="App">
-     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path='/game' element={<Game setResult={()=> handleResultChange()} setLives={()=>handleLives()} lives={lives} productsWithMilk={productsWithMilk} productsWithoutMilk={productsWithoutMilk}/>}/>
-          <Route path='/result' element={<Result result={result}/>} />
-          <Route path='/gameover' element={<GameOver />} />
-          <Route path='*' element={<NoPage />} />
-          
-        </Route>
-        
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route
+              path='/game'
+              element={
+                <Game
+                  setResult={handleResultChange}
+                  setLives={handleLives}
+                  lives={lives}
+                  productsWithMilk={productsWithMilk}
+                  productsWithoutMilk={productsWithoutMilk}
+                />
+              }
+            />
+            <Route path='/result' element={<Result result={result} />} />
+            <Route path='/gameover' element={<GameOver />} />
+            <Route path='*' element={<NoPage />} />
+          </Route>
+        </Routes>
       </BrowserRouter>
     </div>
   );

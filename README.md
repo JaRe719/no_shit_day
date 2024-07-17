@@ -1,6 +1,4 @@
-# no_shit_day
-
-# MiniHackathon 2024 - Open-Food-Facts - Projekt
+# MiniHackathon 2024 - Open-Food-Facts - Projekt "No-Shit-Day"
 
 Willkommen zu unserem GitHub Repository für die zweite Challenge des MiniHackathons von Kevin Chromik! 
 Dieser Hackathon bietet uns die Gelegenheit, kreative Anwendungen etc. zu entwickeln. Unser Ziel ist es, eine kreative Lösung inklusive Bildungsauftrag (mit einem Augenzwinkern ;)) zu präsentieren, die auf der Open-Food-Facts API basiert.
@@ -10,7 +8,6 @@ Dieser Hackathon bietet uns die Gelegenheit, kreative Anwendungen etc. zu entwic
 Immer mehr Menschen haben heutzutage mit einer Laktose-Intolleranz zu kämpfen. Doch welche Produkte sind bedenkenlos für eben diese und welche führen zu einem "Shit-Day"?
 Um das zu verinnerlichen haben wir mit einem spielerischen Ansatz eine Lernapp gebaut, mit der die Kandidaten in einem Quiz entscheiden müssen, welches das unbedenkliche Produkt aus einer Auswahl von 3 Lebensmitteln ist.
 
-
 ## Unsere Lösung
 
 ### Projektübersicht
@@ -18,19 +15,20 @@ Um das zu verinnerlichen haben wir mit einem spielerischen Ansatz eine Lernapp g
 **No-Shit-Day** ist eine benutzerfreundliche Quiz-Website, die dem Nutzer spielerisch näher bringt, welche Lebensmittel für Menschen mit Laktose-Intolleranz unbedenklich sind, und welche zu einem "Shit-Day" führen.
 Der Spieler hat 3 Leben, liegt er/sie also viermal falsch, ist das Spiel verloren.
 
+### Demo
+
+ [Hier Gehts zur Netlify-Demo .... Klick!](https://6697dd257303eb0009461d3c--no-shit-day.netlify.app)
+
 ### Technologien und Tools
 
 - **Frontend**: HTML, SCSS, JavaScript, React
 - **API**: Open-Food-Facts API
-- **Hosting**: 
- 
-
-
+- **Hosting**: Netlify
+  
 ## API-Dokumentation
 
-- **Open-Food-Facts API**: [Open-Meteo Webseite](https://world.openfoodfacts.org/)
-- **API Dokumentation**: [Open-Meteo Docs](https://world.openfoodfacts.org/data)
-
+- **Open-Food-Facts API**:  [Hier gehts zur API](https://world.openfoodfacts.org/)
+- **API Dokumentation**:    [Hier ist die Dokumentation](https://world.openfoodfacts.org/data)
 
 ## Regeln
 
@@ -49,7 +47,6 @@ Falls Sie Anregungen oder Fragen haben, zögern Sie nicht, uns zu kontaktieren.
 
 Happy Hacking!
 
-
 ---
 
 #### Dev Team
@@ -57,4 +54,3 @@ Happy Hacking!
 - [@Janine7492](https://www.github.com/Janine7492)
 
 - [@ReBehrens](https://www.github.com/ReBehrens)
-

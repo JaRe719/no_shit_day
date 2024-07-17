@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./ChoiceCard.scss";
 import noPic from "../../../assets/img/noPic.png"
 

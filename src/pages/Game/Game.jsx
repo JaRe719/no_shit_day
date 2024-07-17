@@ -4,9 +4,6 @@ import ChoicesGrid from "../../components/GamePanel/ChoicesGrid/ChoicesGrid";
 
 const Game = ({ setResult, setLives, lives, productsWithMilk, productsWithoutMilk }) => {
 
-  console.log("productsWithMilk: ", productsWithMilk);
-  console.log("productsWithoutMilk: ", productsWithoutMilk);
-
   const [gameOptions, setGameOptions] = useState([]);
   const [playersChoice, setPlayersChoice] =useState(null);
 
@@ -33,7 +30,6 @@ const Game = ({ setResult, setLives, lives, productsWithMilk, productsWithoutMil
     }
   }, [productsWithMilk, productsWithoutMilk]);
 
-  console.log(gameOptions);
 
   return (
     <div className='gamePage'>

@@ -11,7 +11,7 @@ const ChoicesGrid = ({gameOptions, playersChoice, setPlayersChoice, lives, setLi
   const [selectedOption, setSelectedOption] = useState(null);
   const [errorMessage, setErrorMessage] = useState(false);
   
-  console.log(score)
+
 
   const handleChoiceSelection = (option) => {
     setSelectedOption(option);

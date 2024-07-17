@@ -2,4 +2,6 @@
 
 #btn {
   @include styleguide.buttonStyle;
+  cursor: pointer;
+  margin: 0 auto 5rem;
 }

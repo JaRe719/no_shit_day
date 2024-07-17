@@ -5,7 +5,8 @@ import right from "../../assets/img/right.png";
 import toilet from "../../assets/img/toiletWithPoop.png";
 import cow from "../../assets/img/cow.png";
 import Button from "../../components/Button/Button";
-import { result } from "lodash";
+import { useNavigate } from "react-router-dom";
+
 
 const Result = (props) => {
   const [result, setResult] = useState("");
@@ -14,13 +15,19 @@ const Result = (props) => {
     setResult(props.result);
   }, [props]);
 
+  let navigate = useNavigate();
+  const redirect = ()=>{
+      navigate("/game")
+   
+  };
+
   return (
     <section className={result}>
       {result === "win" ? (
         <>
           <div className="textBox">
-            <h1>Das war richtig</h1>
-            <h2>du ersparst dir einen Shit-Day!</h2>
+            <h1>Das war richtig!</h1>
+            <h2>Du ersparst dir einen Shit-Day!</h2>
           </div>
           <div className="imageBoxResult">
             <div className="imageInBoxResult">
@@ -47,7 +54,7 @@ const Result = (props) => {
           </div>
         </>
       )}
-      <Button />
+      <Button text="Nächste Runde" action={redirect} />
     </section>
   );
 };

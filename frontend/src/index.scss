@@ -1,3 +1,13 @@
+
+@use "./styleguide.scss" as styles;  
+ 
+html{
+  font-size: 10px;
+  min-height: 100vh;
+  height: 100vh;
+  @include styles.backgroundGradient;
+  margin: 0;
+}
 body {
   margin: 0;
   padding: 0;
@@ -9,8 +19,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   font-size: 10px;
+  height: 100%;
+  
 }
-
+#root{
+  height: 100%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

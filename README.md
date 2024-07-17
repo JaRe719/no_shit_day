@@ -56,3 +56,8 @@ Happy Hacking!
 - [@Janine7492](https://www.github.com/Janine7492)
 
 - [@ReBehrens](https://www.github.com/ReBehrens)
+
+
+##### Disclaimer
+
+Die Daten sind leider etwas inkonsistent, daher könnte es sein, dass in der Auswahl Daten fehlen oder in einer falschen Sprache angezeigt werden. Liegt also nicht an uns :D

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./Game.scss";
 import ChoicesGrid from "../../components/GamePanel/ChoicesGrid/ChoicesGrid";
 
-const Game = ({ setResult, setLives, lives, productsWithMilk, productsWithoutMilk }) => {
+const Game = ({ setResult, setLives, lives, productsWithMilk, productsWithoutMilk, score, setScore }) => {
 
   const [gameOptions, setGameOptions] = useState([]);
   const [playersChoice, setPlayersChoice] =useState(null);
@@ -33,7 +33,17 @@ const Game = ({ setResult, setLives, lives, productsWithMilk, productsWithoutMil
 
   return (
     <div className='gamePage'>
-      <ChoicesGrid gameOptions={gameOptions} playersChoice={playersChoice} setPlayersChoice={setPlayersChoice} lives={lives} setLives={setLives} productsWithMilk={productsWithMilk} setResult={setResult}/>
+      <ChoicesGrid 
+          gameOptions={gameOptions} 
+          playersChoice={playersChoice} 
+          setPlayersChoice={setPlayersChoice} 
+          lives={lives} 
+          setLives={setLives} 
+          productsWithMilk={productsWithMilk} 
+          setResult={setResult}
+          score={score}
+          setScore={setScore}
+          />
     </div>
   );
 }

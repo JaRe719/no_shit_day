@@ -1,3 +1,5 @@
+![Logo](https://i.ibb.co/pbcfZ0X/No-Shit-Day.png)
+
 # MiniHackathon 2024 - Open-Food-Facts - Projekt "No-Shit-Day"
 
 Willkommen zu unserem GitHub Repository für die zweite Challenge des MiniHackathons von Kevin Chromik! 

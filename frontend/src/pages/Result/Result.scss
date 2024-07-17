@@ -3,9 +3,18 @@
 section {
   @include styleguide.flexBoxColumnAligenCenter;
   height: 100%;
-  padding: 60px 0;
+  padding: 0;
   .textBox {
     margin-bottom: 50px;
+    margin-top: 0;
+    h1{
+      @include styleguide.h2Style;
+      margin-bottom: 2rem;
+    }
+    h2{
+      @include styleguide.pStyle;
+      text-align: center
+    }
   }
 
   .imageBoxResult {

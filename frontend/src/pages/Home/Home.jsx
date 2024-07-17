@@ -2,8 +2,15 @@ import React from "react";
 import Button from "../../components/Button/Button";
 import "./Home.scss";
 import shitty from "../../assets/img/shitty.png";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+  let navigate = useNavigate();
+  const redirect = ()=>{
+      navigate("/game")
+   
+  };
   return (
     <section>
       <div className="textBox">
@@ -13,7 +20,7 @@ const Home = () => {
       <div className="imgBox">
         <img src={shitty} alt="poop" />
       </div>
-      <Button />
+      <Button text="Starte das Quiz!" action={redirect}/>
     </section>
   );
 };

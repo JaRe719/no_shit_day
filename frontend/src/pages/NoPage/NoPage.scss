@@ -1,0 +1,8 @@
+@use "../../styleguide.scss" as styles;
+
+.noPage{
+    @include styles.h2Style;
+    text-align: center;
+    margin-top: 50px;
+    color: styles.$red;
+}

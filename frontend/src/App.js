@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import loadAllProducts from './utils/DataFetch';
@@ -46,8 +46,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+        <Route index element={<Home />} />
+        <Route path='/gameover' element={<GameOver setLives={setLives} />} />
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
+            
             <Route
               path='/game'
               element={
@@ -61,7 +63,7 @@ function App() {
               }
             />
             <Route path='/result' element={<Result result={result} />} />
-            <Route path='/gameover' element={<GameOver />} />
+            
             <Route path='*' element={<NoPage />} />
           </Route>
         </Routes>

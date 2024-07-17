@@ -3,11 +3,12 @@
 section {
   @include styleguide.flexBoxColumnAligenCenter;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
 
   .textBox {
     @include styleguide.flexBoxColumnAligenCenter;
     margin-bottom: 36px;
+    margin-top: 80px;
 
     h1 {
       @include styleguide.h1Style;

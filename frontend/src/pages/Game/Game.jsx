@@ -8,7 +8,7 @@ const Game = ({ setResult, setLives, lives, productsWithMilk, productsWithoutMil
   console.log("productsWithoutMilk: ", productsWithoutMilk);
 
   const [gameOptions, setGameOptions] = useState([]);
-  const [playersChoice, setPlayersChoice] =useState();
+  const [playersChoice, setPlayersChoice] =useState(null);
 
   useEffect(() => {
     if (productsWithMilk.length > 0 && productsWithoutMilk.length > 0) {
@@ -36,10 +36,8 @@ const Game = ({ setResult, setLives, lives, productsWithMilk, productsWithoutMil
   console.log(gameOptions);
 
   return (
-    <div>
-      Hier wird gespielt
-
-      <ChoicesGrid gameOptions={gameOptions} playersChoice={playersChoice} setPlayersChoice={setPlayersChoice} lives={lives} setLives={setLives}/>
+    <div className='gamePage'>
+      <ChoicesGrid gameOptions={gameOptions} playersChoice={playersChoice} setPlayersChoice={setPlayersChoice} lives={lives} setLives={setLives} productsWithMilk={productsWithMilk} setResult={setResult}/>
     </div>
   );
 }

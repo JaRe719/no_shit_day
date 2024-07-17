@@ -1,0 +1,12 @@
+@use "../../styleguide.scss" as styleguide;
+
+#gameOver {
+  @include styleguide.flexBoxColumnAligenCenter;
+  justify-content: space-between;
+  height: 95vh;
+  width: 100vw;
+  background: url("../../assets/img/gameOver.png");
+  background-size: cover;
+
+  margin-top: -170px;
+}

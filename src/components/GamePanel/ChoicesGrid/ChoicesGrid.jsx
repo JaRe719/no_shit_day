@@ -6,10 +6,12 @@ import ChoicesCard from "../ChoiceCard/ChoiceCard";
 import Button from "../../Button/Button";
 import { useNavigate } from 'react-router-dom';
 
-const ChoicesGrid = ({gameOptions, playersChoice, setPlayersChoice, lives, setLives, productsWithMilk, setResult }) => {
+const ChoicesGrid = ({gameOptions, playersChoice, setPlayersChoice, lives, setLives, productsWithMilk, setResult, score, setScore }) => {
 
   const [selectedOption, setSelectedOption] = useState(null);
   const [errorMessage, setErrorMessage] = useState(false);
+  
+  console.log(score)
 
   const handleChoiceSelection = (option) => {
     setSelectedOption(option);
@@ -32,6 +34,8 @@ const ChoicesGrid = ({gameOptions, playersChoice, setPlayersChoice, lives, setLi
       redirect();
     } else if (!productsWithMilk.includes(playersChoice) && playersChoice != null){
       setResult("win");
+      setScore(prevScore => prevScore+1);
+      console.log(score)
       redirect();
     } else {
       setErrorMessage(true);
@@ -47,6 +51,7 @@ const ChoicesGrid = ({gameOptions, playersChoice, setPlayersChoice, lives, setLi
           <h2>Wähle das Produkt OHNE Laktose!</h2>
         </div>
         <div className='livesContainer'>
+          <p>Dein aktueller Score: {score}</p>
           <p>Deine verbliebenen Leben:</p>
           {(lives === 3) ? 
             <div className='lives'>

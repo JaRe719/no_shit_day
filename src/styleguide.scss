@@ -3,6 +3,7 @@ $gray900: #1e1d20;
 $satin-sheen-gold: #d5ac4eff;
 $golden-brown-dark: #3a290d;
 $red: #A2354A;
+$green: #235739;
 
 @font-face {
   font-family: "CrimsonPro";
@@ -57,7 +58,7 @@ $red: #A2354A;
 @mixin mainText {
   font-family: "Dosis";
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 600;
   color: $gray900;
   margin: 5px;
 }

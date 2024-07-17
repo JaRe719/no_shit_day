@@ -12,6 +12,7 @@ import NoPage from './pages/NoPage/NoPage';
 function App() {
   const [result, setResult] = useState("");
   const [lives, setLives] = useState(3);
+  const [score, setScore] = useState(0);
   const [productsWithMilk, setProductsWithMilk] = useState([]);
   const [productsWithoutMilk, setProductsWithoutMilk] = useState([]);
   const [error, setError] = useState(null);
@@ -47,7 +48,7 @@ function App() {
       <BrowserRouter>
         <Routes>
         <Route index element={<Home />} />
-        <Route path='/gameover' element={<GameOver setLives={setLives} />} />
+        <Route path='/gameover' element={<GameOver setLives={setLives} setScore={setScore} score={score}/>} />
           <Route path="/" element={<Layout />}>
             
             <Route
@@ -59,6 +60,8 @@ function App() {
                   lives={lives}
                   productsWithMilk={productsWithMilk}
                   productsWithoutMilk={productsWithoutMilk}
+                  score={score}
+                  setScore={setScore}
                 />
               }
             />

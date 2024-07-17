@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Game.scss";
+import ChoicesGrid from "../../components/GamePanel/ChoicesGrid/ChoicesGrid";
 
 const Game = ({ setResult, setLives, lives, productsWithMilk, productsWithoutMilk }) => {
 
@@ -7,6 +8,7 @@ const Game = ({ setResult, setLives, lives, productsWithMilk, productsWithoutMil
   console.log("productsWithoutMilk: ", productsWithoutMilk);
 
   const [gameOptions, setGameOptions] = useState([]);
+  const [playersChoice, setPlayersChoice] =useState();
 
   useEffect(() => {
     if (productsWithMilk.length > 0 && productsWithoutMilk.length > 0) {
@@ -37,9 +39,7 @@ const Game = ({ setResult, setLives, lives, productsWithMilk, productsWithoutMil
     <div>
       Hier wird gespielt
 
-      {gameOptions.map((option, index) => (
-        <p key={index}>{option.product_name}</p>
-      ))}
+      <ChoicesGrid gameOptions={gameOptions} playersChoice={playersChoice} setPlayersChoice={setPlayersChoice} lives={lives} setLives={setLives}/>
     </div>
   );
 }

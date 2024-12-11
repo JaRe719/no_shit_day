@@ -19,13 +19,13 @@ Der Spieler hat 3 Leben, liegt er/sie also viermal falsch, ist das Spiel verlore
 
 ### Demo
 
- [Hier Gehts zur Netlify-Demo .... Klick!](https://6697dd257303eb0009461d3c--no-shit-day.netlify.app)
+ [Hier Gehts zur Netlify-Demo .... Klick!](https://no-shit-day.onrender.com)
 
 ### Technologien und Tools
 
 - **Frontend**: HTML, SCSS, JavaScript, React
 - **API**: Open-Food-Facts API
-- **Hosting**: Netlify
+- **Hosting**: Render.com
   
 ## API-Dokumentation
 
